@@ -16,7 +16,7 @@
       crossorigin="anonymous"
       referrerpolicy="no-referrer"
     />
-    <link rel="stylesheet" href="./css/main.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
   </head>
   <body>
     <!--Шапка сайта-->
@@ -25,7 +25,7 @@
         <a href="./index.html" lang="en" class="logo"
           ><span class="logo--accent">Web</span>Studio</a
         >
-        <ul class="header__list">
+        <ul class="header__nav-list">
           <li>
             <a href="./index.html" class="header__nav-link header__nav-link--current">Студия</a>
           </li>
@@ -33,15 +33,15 @@
           <li><a href="" class="header__nav-link">Контакты</a></li>
         </ul>
       </nav>
-      <ul class="header__list">
-        <li>
+      <ul class="header__contact-list">
+        <li class="header__contact-item">
           <a href="mailto:info@devstudio.com" class="header__contact-link"
             ><svg class="header__icon--prepend" width="16" height="12">
               <use href="./images/symbol-defs.svg#envelope"></use></svg
             >info@devstudio.com</a
           >
         </li>
-        <li>
+        <li class="header__contact-item">
           <a href="tel:+380961111111" class="header__contact-link">
             <svg class="header__icon--prepend" width="10" height="16">
               <use href="./images/symbol-defs.svg#smartphone"></use>
@@ -56,7 +56,7 @@
     <!--Основная часть нашего сайта-->
     <main>
       <!-- Герой -->
-      <section class="hero section">
+      <section class="hero">
         <div class="container">
           <h1 class="hero__title hero__title--move">Эффективные решения для вашего бизнеса</h1>
           <button type="button" class="hero__button" data-modal-open>Заказать услугу</button>
@@ -121,7 +121,7 @@
         <div class="container">
           <h2 class="visually-hidden">Наши приемущества</h2>
           <ul class="advantage__list">
-            <li>
+            <li class="advantage__item">
               <div class="advantage__thumb">
                 <svg class="advantage__pic">
                   <use href="./images/symbol-defs.svg#antenna"></use>
@@ -132,7 +132,7 @@
                 Идейные соображения, а также начало повседневной работы по формированию позиции.
               </p>
             </li>
-            <li>
+            <li class="advantage__item">
               <div class="advantage__thumb">
                 <svg class="advantage__pic">
                   <use href="./images/symbol-defs.svg#clock" width="70px" height="70px"></use>
@@ -143,7 +143,7 @@
                 Задача организации, в особенности же рамки и место обучения кадров влечет за собой.
               </p>
             </li>
-            <li>
+            <li class="advantage__item">
               <div class="advantage__thumb">
                 <svg class="advantage__pic">
                   <use href="./images/symbol-defs.svg#diagram" width="70px" height="70px"></use>
@@ -154,7 +154,7 @@
                 Равным образом консультация с широким активом в значительной степени обуславливает.
               </p>
             </li>
-            <li>
+            <li class="advantage__item">
               <div class="advantage__thumb">
                 <svg class="advantage__pic">
                   <use href="./images/symbol-defs.svg#astronaut" width="70px" height="70px"></use>
@@ -169,7 +169,7 @@
         </div>
       </section>
       <!--Чем мы занимаемся-->
-      <section class="work work__section">
+      <section class="work__section">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
           <ul class="work__list">
@@ -369,42 +369,42 @@
         <div class="container">
           <h2 class="section-title">Постоянные клиенты</h2>
           <ul class="clients__list">
-            <li>
+            <li class="clients__item">
               <a class="clients__link" href="" rel="noopener noreferrer" target="_blank">
                 <svg class="clients__pic">
                   <use href="./images/symbol-defs.svg#logo1"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__link" href="" rel="noopener noreferrer" target="_blank">
                 <svg class="clients__pic">
                   <use href="./images/symbol-defs.svg#logo2"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__link" href="" rel="noopener noreferrer" target="_blank">
                 <svg class="clients__pic">
                   <use href="./images/symbol-defs.svg#logo3"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__link" href="" rel="noopener noreferrer" target="_blank">
                 <svg class="clients__pic">
                   <use href="./images/symbol-defs.svg#logo4"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__link" href="" rel="noopener noreferrer" target="_blank">
                 <svg class="clients__pic">
                   <use href="./images/symbol-defs.svg#logo5"></use>
                 </svg>
               </a>
             </li>
-            <li>
+            <li class="clients__item">
               <a class="clients__link" href="" rel="noopener noreferrer" target="_blank">
                 <svg class="clients__pic">
                   <use href="./images/symbol-defs.svg#logo6"></use>
@@ -418,81 +418,84 @@
     <!--Подвал-->
     <footer class="footer">
       <div class="footer__container container">
-        <div>
-          <a href="./index.html" lang="en" class="logo footer__logo link"
-            ><span class="logo--accent">Web</span>Studio</a
-          >
-          <address class="address">
-            <p class="footer__address-text">г. Киев, пр-т Леси Украинки, 26</p>
-            <ul class="footer__list">
-              <li class="footer__item">
+        <div class="footer__box">
+          <div>
+            <a href="./index.html" lang="en" class="logo footer__logo link"
+              ><span class="logo--accent">Web</span>Studio</a
+            >
+            <address class="address">
+              <p class="footer__address-text">г. Киев, пр-т Леси Украинки, 26</p>
+              <ul class="footer__list">
+                <li class="footer__item">
+                  <a
+                    href="mailto:info@devstudio.com"
+                    class="footer__contact .footer__address-text link"
+                    >info@devstudio.com</a
+                  >
+                </li>
+                <li class="footer__item">
+                  <a href="tel:+380961111111" class="footer__contact .footer__address-text link"
+                    >+38 096 111 11 11</a
+                  >
+                </li>
+              </ul>
+            </address>
+          </div>
+          <div class="footer__content">
+            <h2 class="footer__title">присоединяйтесь</h2>
+            <ul class="social__list footer__list">
+              <li class="footer-item">
                 <a
-                  href="mailto:info@devstudio.com"
-                  class="footer__contact .footer__address-text link"
-                  >info@devstudio.com</a
+                  class="social__link footer__link"
+                  href=""
+                  rel="noreferrer nopoener"
+                  target="_blank"
                 >
+                  <svg class="social__icon">
+                    <use href="./images/symbol-defs.svg#instagram"></use>
+                  </svg>
+                </a>
               </li>
-              <li class="footer__item">
-                <a href="tel:+380961111111" class="footer__contact .footer__address-text link"
-                  >+38 096 111 11 11</a
+              <li>
+                <a
+                  class="social__link footer__link"
+                  href=""
+                  rel="noreferrer nopoener"
+                  target="_blank"
                 >
+                  <svg class="social__icon">
+                    <use href="./images/symbol-defs.svg#twitter"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="social__link footer__link"
+                  href=""
+                  rel="noreferrer nopoener"
+                  target="_blank"
+                >
+                  <svg class="social__icon">
+                    <use href="./images/symbol-defs.svg#facebook"></use>
+                  </svg>
+                </a>
+              </li>
+              <li>
+                <a
+                  class="social__link footer__link"
+                  href=""
+                  rel="noreferrer nopoener"
+                  target="_blank"
+                >
+                  <svg class="social__icon">
+                    <use href="./images/symbol-defs.svg#linkedin"></use>
+                  </svg>
+                </a>
               </li>
             </ul>
-          </address>
+          </div>
         </div>
-        <div class="footer__content">
-          <h2 class="footer__title">присоединяйтесь</h2>
-          <ul class="social__list footer__list">
-            <li class="footer-item">
-              <a
-                class="social__link footer__link"
-                href=""
-                rel="noreferrer nopoener"
-                target="_blank"
-              >
-                <svg class="social__icon">
-                  <use href="./images/symbol-defs.svg#instagram"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="social__link footer__link"
-                href=""
-                rel="noreferrer nopoener"
-                target="_blank"
-              >
-                <svg class="social__icon">
-                  <use href="./images/symbol-defs.svg#twitter"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="social__link footer__link"
-                href=""
-                rel="noreferrer nopoener"
-                target="_blank"
-              >
-                <svg class="social__icon">
-                  <use href="./images/symbol-defs.svg#facebook"></use>
-                </svg>
-              </a>
-            </li>
-            <li>
-              <a
-                class="social__link footer__link"
-                href=""
-                rel="noreferrer nopoener"
-                target="_blank"
-              >
-                <svg class="social__icon">
-                  <use href="./images/symbol-defs.svg#linkedin"></use>
-                </svg>
-              </a>
-            </li>
-          </ul>
-        </div>
+
         <div class="footer__subscript">
           <h2 class="footer__title footer__title--variation">Подпишитесь на рассылку</h2>
           <form class="footer__subscript-form">

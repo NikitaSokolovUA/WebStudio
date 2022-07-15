@@ -1,9 +1,39 @@
 .portfolio__list {
     @extend %list;
-    display: flex;
-    flex-wrap: wrap;
-    width: 370;
-    gap: $indent;
+   
+    @media screen and (max-width: 767px){
+        display: block;
+    }
+
+    @media screen and (min-width:768px){
+        display: flex;
+        flex-wrap: wrap;
+        gap: $indent;
+    }
+}
+
+.portfolio__item{
+
+    &:not(:last-child){
+        @media screen and (max-width: 767px){
+            margin-bottom: $indent;
+            
+        }
+    }
+
+    @media screen and (max-width: 767px){
+        width: 450px;
+    }
+
+    @media (min-width:768px) and (max-width:1199px){
+        width: 354px;
+        flex-basis: calc((100% - $indent) / 2);
+    }
+
+    @media screen and (min-width: 1200px){
+        width: 370px;
+        flex-basis: calc((100% - $indent * 2) / 3)
+    }
 }
 
 .portfolio__link {
@@ -15,7 +45,7 @@
     }
 }
 
-.portfolio__item {
+.portfolio__box {
     padding-top: 20px;
     padding-bottom: 20px;
     padding-right: 24px;

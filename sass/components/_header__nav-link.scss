@@ -1,5 +1,6 @@
 .header__nav-link {
     @extend %header__link;
+    display: flex;
 
     &:focus,&:hover {
             color: $accent-color;

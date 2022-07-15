@@ -69,6 +69,11 @@
     padding-left: 29px;
     padding-right: 28px;
 
+    @media screen and (max-width:1199px) {
+        margin-top: 20px;
+        margin-right: auto;
+        margin-left: auto;
+    }
 }
 
 .footer__btn--icon {
@@ -81,9 +86,16 @@
 .portfolio__list-btn{
     @extend %list;
     display: flex;
+    margin-bottom: 56px;
+    gap: 8px;
+
+    @media screen and (max-width: 767px){
+    flex-wrap: wrap;
+    }
+    @media screen and (min-width: 768px){
         justify-content: center;
-        margin-bottom: 56px;
-        gap: 8px;
+    }
+
 }
 .portfolio__button {
     @extend %button;

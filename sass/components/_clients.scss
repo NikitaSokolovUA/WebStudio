@@ -2,8 +2,22 @@
     @extend %list;
     display: flex;
     gap: $indent;
+
+    @media  screen and (max-width: 1199px) {
+        flex-wrap: wrap;      
+        justify-content: center;  
+    }
 }
 
+.clients__item{
+    @media screen and (max-width: 767px) {
+         flex-basis: calc((100% - $indent) / 2);
+    }
+
+    @media (min-width: 768px) and (max-width: 1199px){
+            flex-basis: calc((100% - $indent * 2) / 3);
+    }
+}
 
 .clients__link {
     display: flex;
