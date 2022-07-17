@@ -1,24 +1,52 @@
 .header {
+    position: relative;
     display: flex;
     align-items: center;
-    justify-content: space-between;
+
+    @media screen and (max-width:767px) {
+        justify-content: space-between;
+    }
+}
+
+.header__container{
+    
+
+    @media screen and (max-width:767px){
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        background-color: $white-color;
+        width: 100%;
+        padding: 48px 40px;
+        z-index: 9999;
+        &.is-open{
+            display: block;
+        }
+    }
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 100%;
+    }
 }
 
 
-.header__main-nav {
-    display: flex;
-    align-items: center;
-}
 
 .header__nav-list {
     @extend %list;
-    display: flex;
-    gap: $indent;
+    
+
+    @media screen and (min-width:768px) {
+        display: flex;
+        gap: $indent;
+    }
 }
 
 .header__contact-list {
     @extend %list;
-    // display: flex;
     gap: $indent;
 
     @media screen and (min-width:1200px) {

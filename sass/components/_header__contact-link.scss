@@ -1,5 +1,16 @@
 /*связаться*/
 .header__contact-item{
+
+    @media screen and (max-width: 767px) {
+        &:first-child {
+                margin-bottom: 32px;
+            }
+        
+            &:last-child {
+                margin-bottom: 64px;
+            }
+    }
+
     &:first-child{
         @media (min-width: 768px) and (max-width: 1199px) {
             margin-bottom: 10px;
@@ -13,6 +24,13 @@
     color: $primary-text-color;
     transition: color 250ms $transition-cubic;
 
+    @media screen and (max-width:767px) {
+        font-size: 34px;
+        line-height: calc(40 / 34);
+
+        
+    }
+
     &:hover, &:focus {
             color: $accent-color;
         }
@@ -20,6 +38,11 @@
 }
 
 .header__icon--prepend {
+
+    @media screen and (max-width:767px) {
+        display: none;
+    }
+
     margin-right: 10px;
     fill: currentColor;
 }
