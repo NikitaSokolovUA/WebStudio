@@ -1,0 +1,31 @@
+.img {
+    display: block;
+    height: 100%;
+
+    @media (min-width:480px) and (max-width: 767px) {
+        width: 450px;
+    }
+
+    @media (min-width:768px) and (max-width:1199px) {
+        width: 354px;
+    }
+
+    @media screen and (min-width: 1200px) {
+        width: 370px;
+    }
+}
+
+.team__images{
+    
+        @media (min-width:480px) and (max-width: 767px) {
+            width: 450px;
+        }
+    
+        @media (min-width:768px) and (max-width:1199px) {
+            width: 354px;
+        }
+    
+        @media screen and (min-width: 1200px) {
+            width: 270px;
+        }
+}

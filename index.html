@@ -200,31 +200,77 @@
           <ul class="work__list">
             <li>
               <div class="work__thumb">
-                <img
-                  src="./images/close-up-image-programer-working-his-desk-office_1098-18707.jpg.jpg"
-                  alt="рабочий процес програмирования"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/work/desktop/desktop-320.webp  1x,
+                      ./images/work/desktop/desktop-640.webp  2x,
+                      ./images/work/desktop/desktop-1280.webp 3x
+                    "
+                    type="image,webp"
+                  />
+
+                  <img
+                    srcset="
+                      ./images/work/desktop/desktop-320.jpg  1x,
+                      ./images/work/desktop/desktop-640.jpg  2x,
+                      ./images/work/desktop/desktop-1280.jpg 3x
+                    "
+                    src="./images/work/desktop/desktop-320.jpg"
+                    alt="рабочий процес програмирования"
+                    width="370"
+                  />
+                </picture>
                 <h3 class="work__subtitle">Десктопные приложения</h3>
               </div>
             </li>
             <li>
               <div class="work__thumb">
-                <img
-                  src="./images/web-ui-designers-are-developing-application-smartphones-team-creators-is-working-interface-mobile-phones_8119-2713.jpg.jpg"
-                  alt="разработка для телефона"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/work/mobile/mobile-320.webp  1x,
+                      ./images/work/mobile/mobile-640.webp  2x,
+                      ./images/work/mobile/mobile-1280.webp 3x
+                    "
+                    type="image,webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/work/mobile/mobile-320.jpg  1x,
+                      ./images/work/mobile/mobile-640.jpg  2x,
+                      ./images/work/mobile/mobile-1280.jpg 3x
+                    "
+                    src="./images/work/mobile/mobile-320.jpg"
+                    alt="разработка для телефона"
+                    width="370"
+                  />
+                </picture>
                 <h3 class="work__subtitle">Мобильные приложения</h3>
               </div>
             </li>
             <li>
               <div class="work__thumb">
-                <img
-                  src="./images/creative-artist-web-design-with-working-colour-selection-graphic-tablet_35674-1119.jpg.jpg"
-                  alt="работа с подбором цвета"
-                  width="370"
-                />
+                <picture>
+                  <source
+                    srcset="
+                      ./images/work/design/design1x.webp 1x,
+                      ./images/work/design/design2x.webp 2x,
+                      ./images/work/design/design3x.webp 3x
+                    "
+                    type="image,webp"
+                  />
+                  <img
+                    srcset="
+                      ./images/work/design/design1x.jpg 1x,
+                      ./images/work/design/design2x.jpg 2x,
+                      ./images/work/design/design3x.jpg 3x
+                    "
+                    src="./images/work/design/design1x.jpg"
+                    alt="работа с подбором цвета"
+                    width="370"
+                  />
+                </picture>
                 <h3 class="work__subtitle">Дизайнерские решения</h3>
               </div>
             </li>
@@ -237,7 +283,27 @@
           <h2 class="section-title">Наша команда</h2>
           <ul class="team__list">
             <li class="team__item">
-              <img src="./images/demianenko.jpg" alt="Игорь Демьяненко" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/demianenko/demianenko-320.webp  1x,
+                    ./images/team/demianenko/demianenko-640.webp  2x,
+                    ./images/team/demianenko/demianenko-1280.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="team__images"
+                  srcset="
+                    ./images/team/demianenko/demianenko-320.jpg  1x,
+                    ./images/team/demianenko/demianenko-640.jpg  2x,
+                    ./images/team/demianenko/demianenko-1280.jpg 3x
+                  "
+                  src="./images/team/demianenko/demianenko-320.jpg"
+                  alt="Игорь Демьяненко"
+                  sizes="(min-width:1200px) 270px, (min-width:768px) 354px, 100vw"
+                />
+              </picture>
               <div class="team__thumb">
                 <h3 class="team__subtitle">Игорь Демьяненко</h3>
                 <p lang="en" class="team__text">Product Designer</p>
@@ -275,7 +341,27 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/repina.jpg" alt="Ольга Репина" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/repina/repina-320.webp  1x,
+                    ./images/team/repina/repina-640.webp  2x,
+                    ./images/team/repina/repina-1280.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="team__images"
+                  srcset="
+                    ./images/team/repina/repina-320.jpg  1x,
+                    ./images/team/repina/repina-640.jpg  2x,
+                    ./images/team/repina/repina-1280.jpg 3x
+                  "
+                  src="./images/team/repina/repina-320.jpg"
+                  alt="Ольга Репина"
+                  sizes="(min-width:1200px) 270px, (min-width:768px) 354px, 100vw"
+                />
+              </picture>
               <div class="team__thumb">
                 <h3 class="team__subtitle">Ольга Репина</h3>
                 <p lang="en" class="team__text">Frontend Developer</p>
@@ -312,7 +398,27 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/tarasov.jpg" alt="Николай Тарасов" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/tarasov/tarasov-320.webp  1x,
+                    ./images/team/tarasov/tarasov-640.webp  2x,
+                    ./images/team/tarasov/tarasov-1280.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="team__images"
+                  srcset="
+                    ./images/team/tarasov/tarasov-320.jpg  1x,
+                    ./images/team/tarasov/tarasov-640.jpg  2x,
+                    ./images/team/tarasov/tarasov-1280.jpg 3x
+                  "
+                  src="./images/team/tarasov/tarasov-320.jpg"
+                  alt="Николай Тарасов"
+                  sizes="(min-width:1200px) 270px, (min-width:768px) 354px, 100vw"
+                />
+              </picture>
               <div class="team__thumb">
                 <h3 class="team__subtitle">Николай Тарасов</h3>
                 <p lang="en" class="team__text">Marketing</p>
@@ -350,7 +456,27 @@
               </div>
             </li>
             <li class="team__item">
-              <img src="./images/ermakov.jpg" alt="" width="270" />
+              <picture>
+                <source
+                  srcset="
+                    ./images/team/ermakov/ermakov-320.webp  1x,
+                    ./images/team/ermakov/ermakov-640.webp  2x,
+                    ./images/team/ermakov/ermakov-1280.webp 3x
+                  "
+                  type="image/webp"
+                />
+                <img
+                  class="team__images"
+                  srcset="
+                    ./images/team/ermakov/ermakov-320.jpg  1x,
+                    ./images/team/ermakov/ermakov-640.jpg  2x,
+                    ./images/team/ermakov/ermakov-1280.jpg 3x
+                  "
+                  src="./images/team/ermakov/ermakov-320.jpg"
+                  alt="Михаил Ермаков"
+                  sizes="(min-width:1200px) 25vw, (min-width:768px) 50vw, 100vw"
+                />
+              </picture>
               <div class="team__thumb">
                 <h3 class="team__subtitle">Михаил Ермаков</h3>
                 <p lang="en" class="team__text">UI Designer</p>
