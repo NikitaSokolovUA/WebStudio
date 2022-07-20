@@ -178,6 +178,12 @@ body {
   font-size: 26px;
   line-height: 1.19;
 }
+@media screen and (max-width: 767px) {
+  .logo {
+    padding-top: 16px;
+    padding-bottom: 16px;
+  }
+}
 
 .logo--accent {
   color: #2196F3;
@@ -193,7 +199,7 @@ body {
 .header__menu-button {
   position: absolute;
   right: 22px;
-  top: -5px;
+  top: 12px;
   z-index: 9999;
   display: flex;
   justify-content: center;
