@@ -52,7 +52,12 @@
     padding-left: 24px;
     border-left: 1px solid $border-color;
     border-right: 1px solid $border-color;
-    border-bottom: 1px solid $border-color;
+    border-bottom: 1px solid $border-color;   
+}
+@media (min-width:768px) and (max-width:1199px) {
+    .portfolio__box--alignment{
+        padding-bottom: 56px;
+    }
 }
 
 .portfolio__title {

@@ -1,4 +1,9 @@
 .header__menu-button{
+    position: absolute;
+    right: 22px;
+    top: -5px;
+
+    z-index: 9999;
     display: flex;
     justify-content: center;
     align-items: center;    
@@ -7,11 +12,17 @@
     height: 40px;
     cursor: pointer;
 
+    fill: currentColor;
+    color: $title-text-color;
     border: none;
     background-color: inherit;
 
     @media screen and (min-width: 768px) {
         display: none;
+    }
+
+    &:hover, &:focus{
+        color: $accent-color;
     }
 }
 

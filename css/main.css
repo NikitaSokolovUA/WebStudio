@@ -109,7 +109,6 @@ body {
 }
 
 .header {
-  position: relative;
   display: flex;
   align-items: center;
 }
@@ -123,12 +122,13 @@ body {
   .header__container {
     display: none;
     position: absolute;
-    top: 100%;
+    top: 0;
     left: 0;
     background-color: #FFFFFF;
     width: 100%;
+    height: 100%;
     padding: 48px 40px;
-    z-index: 9999;
+    z-index: 100;
   }
   .header__container.is-open {
     display: block;
@@ -163,6 +163,13 @@ body {
   border-bottom: 1px solid #EEEEEE;
 }
 
+@media screen and (max-width: 767px) {
+  .header__contact--mobile {
+    position: absolute;
+    bottom: 48px;
+    left: 40px;
+  }
+}
 .logo {
   margin-right: 93px;
   color: #212121;
@@ -184,6 +191,10 @@ body {
 }
 
 .header__menu-button {
+  position: absolute;
+  right: 22px;
+  top: -5px;
+  z-index: 9999;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -191,6 +202,8 @@ body {
   width: 40px;
   height: 40px;
   cursor: pointer;
+  fill: currentColor;
+  color: #212121;
   border: none;
   background-color: inherit;
 }
@@ -198,6 +211,9 @@ body {
   .header__menu-button {
     display: none;
   }
+}
+.header__menu-button:hover, .header__menu-button:focus {
+  color: #2196F3;
 }
 
 .header__menu-button .icon-cross {
@@ -218,9 +234,6 @@ body {
   }
   .header__nav-item:nth-child(2) {
     margin-bottom: 32px;
-  }
-  .header__nav-item:last-child {
-    margin-bottom: 302px;
   }
 }
 
@@ -936,10 +949,15 @@ body {
     flex-basis: calc((100% - 60px) / 3);
   }
 }
+@media screen and (min-width: 1200px) {
+  .clients__item {
+    flex-basis: calc((100% - 150px) / 6);
+  }
+}
 
 .clients__link {
   display: flex;
-  width: 170px;
+  width: 100%;
   height: 92px;
   border-radius: 4px;
   justify-content: center;
@@ -955,7 +973,7 @@ body {
 }
 
 .clients__pic {
-  width: 106px;
+  width: 100%;
   height: 60px;
   padding: 0;
   fill: currentColor;
@@ -1137,6 +1155,11 @@ body {
   border-bottom: 1px solid #EEEEEE;
 }
 
+@media (min-width: 768px) and (max-width: 1199px) {
+  .portfolio__box--alignment {
+    padding-bottom: 56px;
+  }
+}
 .portfolio__title {
   margin-top: 0;
   margin-bottom: 4px;
